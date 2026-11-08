@@ -93,11 +93,11 @@ Partial Class ScheduleAppointmentForm
         'txtSched
         '
         Me.txtSched.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSched.Location = New System.Drawing.Point(13, 251)
+        Me.txtSched.Location = New System.Drawing.Point(13, 246)
         Me.txtSched.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtSched.Name = "txtSched"
         Me.txtSched.ReadOnly = True
-        Me.txtSched.Size = New System.Drawing.Size(380, 24)
+        Me.txtSched.Size = New System.Drawing.Size(506, 24)
         Me.txtSched.TabIndex = 63
         '
         'cmbPurpose
@@ -295,7 +295,7 @@ Partial Class ScheduleAppointmentForm
         '
         Me.btnSchedule.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnSchedule.ForeColor = System.Drawing.Color.White
-        Me.btnSchedule.Location = New System.Drawing.Point(480, 241)
+        Me.btnSchedule.Location = New System.Drawing.Point(615, 241)
         Me.btnSchedule.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSchedule.Name = "btnSchedule"
         Me.btnSchedule.Size = New System.Drawing.Size(147, 34)
@@ -307,7 +307,7 @@ Partial Class ScheduleAppointmentForm
         '
         Me.btnCancel.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(398, 241)
+        Me.btnCancel.Location = New System.Drawing.Point(533, 241)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(74, 34)
@@ -346,7 +346,7 @@ Partial Class ScheduleAppointmentForm
         Me.Panel1.ForeColor = System.Drawing.Color.SkyBlue
         Me.Panel1.Location = New System.Drawing.Point(-2, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(645, 39)
+        Me.Panel1.Size = New System.Drawing.Size(765, 39)
         Me.Panel1.TabIndex = 85
         '
         'GroupBox1
@@ -383,7 +383,7 @@ Partial Class ScheduleAppointmentForm
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Location = New System.Drawing.Point(398, 45)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(229, 188)
+        Me.GroupBox2.Size = New System.Drawing.Size(365, 188)
         Me.GroupBox2.TabIndex = 87
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Schedule"
@@ -392,7 +392,7 @@ Partial Class ScheduleAppointmentForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(640, 292)
+        Me.ClientSize = New System.Drawing.Size(775, 285)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)

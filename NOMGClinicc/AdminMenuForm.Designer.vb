@@ -22,6 +22,7 @@ Partial Class AdminMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminMenuForm))
         Me.btnBillingAndPayments = New System.Windows.Forms.Button()
         Me.btnAppointments = New System.Windows.Forms.Button()
         Me.lblAdminMenu = New System.Windows.Forms.Label()
@@ -138,7 +139,9 @@ Partial Class AdminMenuForm
         Me.Controls.Add(Me.btnAppointments)
         Me.Controls.Add(Me.lblAdminMenu)
         Me.Controls.Add(Me.btnPatient)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AdminMenuForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Menu"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

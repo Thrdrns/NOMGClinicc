@@ -22,6 +22,7 @@ Partial Class AccountsDatabase
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AccountsDatabase))
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
@@ -159,7 +160,9 @@ Partial Class AccountsDatabase
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.dgvAccountRecords)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AccountsDatabase"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Accounts Database"
         CType(Me.dgvAccountRecords, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)

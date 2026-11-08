@@ -89,6 +89,7 @@ Partial Class PatientLoginForm1
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPhoneNumber)
         Me.Name = "PatientLoginForm1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Phone Number"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

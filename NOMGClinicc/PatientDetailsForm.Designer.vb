@@ -350,6 +350,7 @@ Partial Class PatientDetailsForm
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "PatientDetailsForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Details"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

@@ -22,6 +22,7 @@ Partial Class AdminLoginForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdminLoginForm))
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblLogin = New System.Windows.Forms.Label()
@@ -127,7 +128,9 @@ Partial Class AdminLoginForm
         Me.Controls.Add(Me.lblLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserName)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AdminLoginForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin Login"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
