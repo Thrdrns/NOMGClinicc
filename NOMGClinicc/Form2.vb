@@ -1,0 +1,19 @@
+﻿Public Class Form2
+    Public admin As String
+    Public adminPass As String
+
+    ' Login button - checks username and password
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If txtUserName.Text = "admin" And txtPassword.Text = "admin123" Then
+            admin = txtUserName.Text
+            adminPass = txtPassword.Text
+            txtUserName.Clear()
+            txtPassword.Clear()
+            Me.Hide()
+            Form3.Show()
+        Else
+            MsgBox("Incorrect Credentials")
+        End If
+    End Sub
+
+End Class

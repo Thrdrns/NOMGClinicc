@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBF428CC-1C41-4D28-8E7E-F0EE3EDD03D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NOMGClinicc.My.MyApplication</StartupObject>
+    <RootNamespace>NOMGClinicc</RootNamespace>
+    <AssemblyName>NOMGClinicc</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NOMGClinicc.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NOMGClinicc.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="AccountsDatabase.Designer.vb">
+      <DependentUpon>AccountsDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupForm.Designer.vb">
+      <DependentUpon>StartupForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentRecordsDatabase.Designer.vb">
+      <DependentUpon>PaymentRecordsDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordsDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentsDatabase.Designer.vb">
+      <DependentUpon>AppointmentsDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentsDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientLoginForm1.Designer.vb">
+      <DependentUpon>PatientLoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientLoginForm2.Designer.vb">
+      <DependentUpon>PatientLoginForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLoginForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginForm.Designer.vb">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuForm.Designer.vb">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientMenuForm.Designer.vb">
+      <DependentUpon>PatientMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientMenuForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientDetailsForm.Designer.vb">
+      <DependentUpon>PatientDetailsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientDetailsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingAndPaymentForm.Designer.vb">
+      <DependentUpon>BillingAndPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BillingAndPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientDetailsDatabase.Designer.vb">
+      <DependentUpon>PatientDetailsDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientDetailsDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleAppointmentForm.Designer.vb">
+      <DependentUpon>ScheduleAppointmentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleAppointmentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\GlobalVariables.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccountsDatabase.resx">
+      <DependentUpon>AccountsDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupForm.resx">
+      <DependentUpon>StartupForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentRecordsDatabase.resx">
+      <DependentUpon>PaymentRecordsDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentsDatabase.resx">
+      <DependentUpon>AppointmentsDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientLoginForm1.resx">
+      <DependentUpon>PatientLoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientLoginForm2.resx">
+      <DependentUpon>PatientLoginForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginForm.resx">
+      <DependentUpon>AdminLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuForm.resx">
+      <DependentUpon>AdminMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientMenuForm.resx">
+      <DependentUpon>PatientMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientDetailsForm.resx">
+      <DependentUpon>PatientDetailsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingAndPaymentForm.resx">
+      <DependentUpon>BillingAndPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientDetailsDatabase.resx">
+      <DependentUpon>PatientDetailsDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleAppointmentForm.resx">
+      <DependentUpon>ScheduleAppointmentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="account.cs" />
+    <Content Include="accounts.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Patient.cs" />
+    <Content Include="billing.txt" />
+    <Content Include="Resources\Text Files\patients.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
