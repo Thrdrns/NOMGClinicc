@@ -577,7 +577,5 @@ Public Class BillingAndPaymentForm
         paymentCompleted = False
     End Sub
 
-    Private Sub txtStatus_TextChanged(sender As Object, e As EventArgs) Handles txtStatus.TextChanged
 
-    End Sub
 End Class

@@ -285,8 +285,4 @@ Public Class PatientDetailsForm
             e.Handled = True
         End If
     End Sub
-
-    Private Sub txtFullName_TextChanged(sender As Object, e As EventArgs) Handles txtFullName.TextChanged
-
-    End Sub
 End Class

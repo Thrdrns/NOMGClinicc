@@ -23,6 +23,7 @@ Partial Class PatientDetailsDatabase
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PatientDetailsDatabase))
         Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -39,25 +40,27 @@ Partial Class PatientDetailsDatabase
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NextVisit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NOMGClinic = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtSearch
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(358, 35)
+        Me.txtSearch.Location = New System.Drawing.Point(795, 15)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(248, 29)
+        Me.txtSearch.Size = New System.Drawing.Size(401, 29)
         Me.txtSearch.TabIndex = 26
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Indigo
-        Me.btnBack.Font = New System.Drawing.Font("Avenir Black", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.White
-        Me.btnBack.Location = New System.Drawing.Point(514, 317)
+        Me.btnBack.Location = New System.Drawing.Point(1068, 499)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(91, 25)
+        Me.btnBack.Size = New System.Drawing.Size(130, 40)
         Me.btnBack.TabIndex = 29
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
@@ -67,18 +70,18 @@ Partial Class PatientDetailsDatabase
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column5, Me.PhoneNumber, Me.Column1, Me.Address, Me.CivilStatus, Me.Column2, Me.Column3, Me.Gender, Me.FirstBaby, Me.LMP, Me.Column4, Me.NextVisit})
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.Control
-        Me.DataGridView1.Location = New System.Drawing.Point(1, 71)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 54)
         Me.DataGridView1.Name = "DataGridView1"
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Avenir Black", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Indigo
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.Size = New System.Drawing.Size(604, 240)
+        Me.DataGridView1.Size = New System.Drawing.Size(1190, 439)
         Me.DataGridView1.TabIndex = 117
         '
         'Column5
@@ -168,28 +171,39 @@ Partial Class PatientDetailsDatabase
         'NOMGClinic
         '
         Me.NOMGClinic.AutoSize = True
-        Me.NOMGClinic.Font = New System.Drawing.Font("Gotham Bold", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NOMGClinic.ForeColor = System.Drawing.Color.Indigo
-        Me.NOMGClinic.Location = New System.Drawing.Point(3, 9)
+        Me.NOMGClinic.Font = New System.Drawing.Font("Arial", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NOMGClinic.ForeColor = System.Drawing.Color.White
+        Me.NOMGClinic.Location = New System.Drawing.Point(10, 10)
         Me.NOMGClinic.Name = "NOMGClinic"
-        Me.NOMGClinic.Size = New System.Drawing.Size(379, 58)
+        Me.NOMGClinic.Size = New System.Drawing.Size(254, 41)
         Me.NOMGClinic.TabIndex = 118
         Me.NOMGClinic.Text = "Patient Details"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Panel1.Controls.Add(Me.txtSearch)
+        Me.Panel1.Controls.Add(Me.NOMGClinic)
+        Me.Panel1.Location = New System.Drawing.Point(-5, -6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1215, 52)
+        Me.Panel1.TabIndex = 119
         '
         'PatientDetailsDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 352)
-        Me.Controls.Add(Me.NOMGClinic)
+        Me.ClientSize = New System.Drawing.Size(1207, 549)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.txtSearch)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PatientDetailsDatabase"
         Me.Text = "Patient Details Database"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents txtSearch As TextBox
@@ -208,4 +222,5 @@ Partial Class PatientDetailsDatabase
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents NextVisit As DataGridViewTextBoxColumn
     Friend WithEvents NOMGClinic As Label
+    Friend WithEvents Panel1 As Panel
 End Class

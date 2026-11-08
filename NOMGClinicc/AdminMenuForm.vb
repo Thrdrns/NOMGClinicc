@@ -7,7 +7,7 @@
     End Sub
 
     ' Appointments button - goes to appointments database form
-    Private Sub btnAppointments_Click(sender As Object, e As EventArgs) Handles btnAppointments.Click, Button1.Click
+    Private Sub btnAppointments_Click(sender As Object, e As EventArgs) Handles btnAppointments.Click
         Me.Hide()
         AppointmentsDatabase.Show()
     End Sub

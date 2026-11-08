@@ -12,4 +12,7 @@
         PatientLoginForm1.Show()
     End Sub
 
+    Private Sub NOMGClinic_Click(sender As Object, e As EventArgs) Handles NOMGClinic.Click
+
+    End Sub
 End Class

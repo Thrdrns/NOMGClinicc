@@ -34,17 +34,19 @@ Partial Class AppointmentsDatabase
         Me.PhoneNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgvAppointments, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'NOMGClinic
         '
         Me.NOMGClinic.AutoSize = True
-        Me.NOMGClinic.Font = New System.Drawing.Font("Gotham Bold", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NOMGClinic.ForeColor = System.Drawing.Color.Indigo
-        Me.NOMGClinic.Location = New System.Drawing.Point(12, 18)
+        Me.NOMGClinic.Font = New System.Drawing.Font("Arial Black", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NOMGClinic.ForeColor = System.Drawing.Color.White
+        Me.NOMGClinic.Location = New System.Drawing.Point(12, 8)
         Me.NOMGClinic.Name = "NOMGClinic"
-        Me.NOMGClinic.Size = New System.Drawing.Size(266, 36)
+        Me.NOMGClinic.Size = New System.Drawing.Size(333, 50)
         Me.NOMGClinic.TabIndex = 10
         Me.NOMGClinic.Text = "APPOINTMENTS"
         '
@@ -53,10 +55,10 @@ Partial Class AppointmentsDatabase
         Me.dgvAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAppointments.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Doctor, Me.Status, Me.NameOfPatient, Me.Purpose, Me.ScheduledDate, Me.Time, Me.NextVisit, Me.PhoneNumber})
         Me.dgvAppointments.GridColor = System.Drawing.SystemColors.ControlLight
-        Me.dgvAppointments.Location = New System.Drawing.Point(5, 60)
+        Me.dgvAppointments.Location = New System.Drawing.Point(13, 74)
         Me.dgvAppointments.Name = "dgvAppointments"
         Me.dgvAppointments.RowHeadersWidth = 51
-        Me.dgvAppointments.Size = New System.Drawing.Size(608, 249)
+        Me.dgvAppointments.Size = New System.Drawing.Size(1027, 410)
         Me.dgvAppointments.TabIndex = 11
         '
         'Doctor
@@ -113,12 +115,12 @@ Partial Class AppointmentsDatabase
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Indigo
-        Me.btnBack.Font = New System.Drawing.Font("Avenir Black", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.White
-        Me.btnBack.Location = New System.Drawing.Point(507, 315)
+        Me.btnBack.Location = New System.Drawing.Point(897, 490)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(103, 23)
+        Me.btnBack.Size = New System.Drawing.Size(148, 38)
         Me.btnBack.TabIndex = 12
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
@@ -126,25 +128,35 @@ Partial Class AppointmentsDatabase
         'txtSearch
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(338, 25)
+        Me.txtSearch.Location = New System.Drawing.Point(707, 19)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(272, 29)
+        Me.txtSearch.Size = New System.Drawing.Size(338, 29)
         Me.txtSearch.TabIndex = 14
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Panel1.Controls.Add(Me.NOMGClinic)
+        Me.Panel1.Controls.Add(Me.txtSearch)
+        Me.Panel1.Location = New System.Drawing.Point(-5, -7)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1068, 61)
+        Me.Panel1.TabIndex = 15
         '
         'AppointmentsDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 352)
-        Me.Controls.Add(Me.txtSearch)
+        Me.ClientSize = New System.Drawing.Size(1057, 538)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.dgvAppointments)
-        Me.Controls.Add(Me.NOMGClinic)
         Me.Name = "AppointmentsDatabase"
         Me.Text = "Appointments Database"
         CType(Me.dgvAppointments, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -160,4 +172,5 @@ Partial Class AppointmentsDatabase
     Friend WithEvents Time As DataGridViewTextBoxColumn
     Friend WithEvents NextVisit As DataGridViewTextBoxColumn
     Friend WithEvents PhoneNumber As DataGridViewTextBoxColumn
+    Friend WithEvents Panel1 As Panel
 End Class

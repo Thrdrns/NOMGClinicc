@@ -26,6 +26,7 @@ Partial Class AccountsDatabase
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.dgvAccountRecords = New System.Windows.Forms.DataGridView()
+        Me.lblAccountRecords = New System.Windows.Forms.Label()
         Me.ColumnId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.columnFirstName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.columnMiddleName = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -33,38 +34,39 @@ Partial Class AccountsDatabase
         Me.columnMobileNumber = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.columnDateAndTime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lblAccountRecords = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.dgvAccountRecords, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtSearch
         '
         Me.txtSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSearch.Location = New System.Drawing.Point(330, 34)
+        Me.txtSearch.Location = New System.Drawing.Point(650, 18)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(272, 29)
+        Me.txtSearch.Size = New System.Drawing.Size(316, 29)
         Me.txtSearch.TabIndex = 18
         '
         'btnRefresh
         '
-        Me.btnRefresh.BackColor = System.Drawing.Color.Indigo
-        Me.btnRefresh.Font = New System.Drawing.Font("Avenir Black", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.ForeColor = System.Drawing.Color.White
-        Me.btnRefresh.Location = New System.Drawing.Point(497, 299)
+        Me.btnRefresh.Location = New System.Drawing.Point(840, 456)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(91, 25)
+        Me.btnRefresh.Size = New System.Drawing.Size(123, 38)
         Me.btnRefresh.TabIndex = 17
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = False
         '
         'btnBack
         '
-        Me.btnBack.BackColor = System.Drawing.Color.Indigo
-        Me.btnBack.Font = New System.Drawing.Font("Avenir Black", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.ForeColor = System.Drawing.Color.White
-        Me.btnBack.Location = New System.Drawing.Point(400, 299)
+        Me.btnBack.Location = New System.Drawing.Point(711, 456)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(91, 25)
+        Me.btnBack.Size = New System.Drawing.Size(123, 38)
         Me.btnBack.TabIndex = 16
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
@@ -73,11 +75,22 @@ Partial Class AccountsDatabase
         '
         Me.dgvAccountRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAccountRecords.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ColumnId, Me.columnFirstName, Me.columnMiddleName, Me.columnLastName, Me.columnMobileNumber, Me.ColumnBirthday, Me.columnDateAndTime})
-        Me.dgvAccountRecords.Location = New System.Drawing.Point(48, 69)
+        Me.dgvAccountRecords.Location = New System.Drawing.Point(9, 72)
         Me.dgvAccountRecords.Name = "dgvAccountRecords"
         Me.dgvAccountRecords.RowHeadersWidth = 51
-        Me.dgvAccountRecords.Size = New System.Drawing.Size(554, 200)
+        Me.dgvAccountRecords.Size = New System.Drawing.Size(954, 378)
         Me.dgvAccountRecords.TabIndex = 15
+        '
+        'lblAccountRecords
+        '
+        Me.lblAccountRecords.AutoSize = True
+        Me.lblAccountRecords.Font = New System.Drawing.Font("Arial Black", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAccountRecords.ForeColor = System.Drawing.Color.White
+        Me.lblAccountRecords.Location = New System.Drawing.Point(15, 9)
+        Me.lblAccountRecords.Name = "lblAccountRecords"
+        Me.lblAccountRecords.Size = New System.Drawing.Size(201, 50)
+        Me.lblAccountRecords.TabIndex = 14
+        Me.lblAccountRecords.Text = "Accounts"
         '
         'ColumnId
         '
@@ -110,7 +123,7 @@ Partial Class AccountsDatabase
         Me.columnMobileNumber.HeaderText = "Mobile Number"
         Me.columnMobileNumber.MinimumWidth = 6
         Me.columnMobileNumber.Name = "columnMobileNumber"
-        Me.columnMobileNumber.Width = 300
+        Me.columnMobileNumber.Width = 150
         '
         'ColumnBirthday
         '
@@ -127,32 +140,31 @@ Partial Class AccountsDatabase
         Me.columnDateAndTime.Name = "columnDateAndTime"
         Me.columnDateAndTime.Width = 125
         '
-        'lblAccountRecords
+        'Panel1
         '
-        Me.lblAccountRecords.AutoSize = True
-        Me.lblAccountRecords.Font = New System.Drawing.Font("Gotham Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAccountRecords.ForeColor = System.Drawing.Color.Indigo
-        Me.lblAccountRecords.Location = New System.Drawing.Point(41, 28)
-        Me.lblAccountRecords.Name = "lblAccountRecords"
-        Me.lblAccountRecords.Size = New System.Drawing.Size(167, 38)
-        Me.lblAccountRecords.TabIndex = 14
-        Me.lblAccountRecords.Text = "Accounts"
+        Me.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Panel1.Controls.Add(Me.lblAccountRecords)
+        Me.Panel1.Controls.Add(Me.txtSearch)
+        Me.Panel1.Location = New System.Drawing.Point(-3, -6)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(983, 63)
+        Me.Panel1.TabIndex = 19
         '
         'AccountsDatabase
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(627, 352)
-        Me.Controls.Add(Me.txtSearch)
+        Me.ClientSize = New System.Drawing.Size(975, 501)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.dgvAccountRecords)
-        Me.Controls.Add(Me.lblAccountRecords)
         Me.Name = "AccountsDatabase"
         Me.Text = "Accounts Database"
         CType(Me.dgvAccountRecords, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -168,4 +180,5 @@ Partial Class AccountsDatabase
     Friend WithEvents columnMobileNumber As DataGridViewTextBoxColumn
     Friend WithEvents ColumnBirthday As DataGridViewTextBoxColumn
     Friend WithEvents columnDateAndTime As DataGridViewTextBoxColumn
+    Friend WithEvents Panel1 As Panel
 End Class
